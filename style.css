@@ -6,17 +6,25 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 section {
     margin-bottom: 100px;
 }
 
+#svg-container svg {
+    width: 100%;
+    height: auto;
+    max-width: 440px;
+}
+
+
 body::-webkit-scrollbar {
     width: 10px;
   }
   
   body::-webkit-scrollbar-thumb {
-    background-color: rgb(193, 193, 193);
+    background-color: #BB7B00;
     border-radius: 20px;
   }
