@@ -9,10 +9,6 @@
     overflow-x: hidden;
 }
 
-section {
-    margin-bottom: 100px;
-}
-
 #svg-container svg {
     width: 100%;
     height: auto;
