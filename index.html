@@ -11,9 +11,9 @@
 
 <body class="bg-[#EBEBEB]">
 
-    <header id="navbar" class="w-full">
+    <header id="navbar" class="opacity-0 fixed z-50 w-full bg-opacity-50 backdrop-blur-lg">
 
-        <nav class="flex flex-col items-center text-[16px] font-medium justify-between py-4 px-6 md:px-16 lg:px-24">
+        <nav class="flex flex-col items-center text-[16px] font-medium justify-between py-3 px-6 md:px-16 lg:px-24">
 
             <div class="flex w-full items-center justify-between">
 
@@ -27,8 +27,8 @@
                     <a href="#advantages" class="hover:font-semibold transition-all">Advantages</a>
                 </div>
     
-                <button class="hidden md:block border-2 border-gray-500 px-4 py-1 text-[12px] rounded-xl hover:px-5 hover:py-1 hover:text-[14px] transition-all">
-                    <a href="#">Download Now</a>
+                <button class="hidden md:block border-2 border-black px-4 py-1 text-[12px] rounded-xl hover:px-5 hover:py-1 hover:text-[14px] transition-all">
+                    <a href="#download">Download Now</a>
                 </button>
     
                 <button id="menu-btn" class="md:hidden">
@@ -44,8 +44,8 @@
                 <a href="#discover" class="py-2 hover:font-semibold transition-all">Discover How</a>
                 <a href="#about" class="py-2 hover:font-semibold transition-all">About Us</a>
                 <a href="#advantages" class="py-2 hover:font-semibold transition-all">Advantages</a>
-                <button class="border-2 border-gray-500 px-4 py-1 text-[12px] rounded-xl hover:px-5 hover:py-1 hover:text-[14px] transition-all">
-                    <a href="#">Download Now</a>
+                <button class="border-2 border-black px-4 py-1 text-[12px] rounded-xl hover:px-5 hover:py-1 hover:text-[14px] transition-all">
+                    <a href="#download">Download Now</a>
                 </button>
 
             </div>
@@ -53,6 +53,45 @@
         </nav>
 
     </header>
+
+    <div class="opacity-0 flex flex-col items-center text-[16px] font-medium justify-between py-3 px-6 md:px-16 lg:px-24">
+
+        <div class="flex w-full items-center justify-between">
+
+            <a href="#heroSection">
+                <img src="assets/imgs/locket logo.png" alt="locket logo" class="rounded-lg w-[40px] hover:w-[43px] transition-all">
+            </a>
+
+            <div class="hidden md:flex gap-6">
+                <a href="#discover" class="hover:font-semibold transition-all">Discover How</a>
+                <a href="#about" class="hover:font-semibold transition-all">About Us</a>
+                <a href="#advantages" class="hover:font-semibold transition-all">Advantages</a>
+            </div>
+
+            <button class="hidden md:block border-2 border-black px-4 py-1 text-[12px] rounded-xl hover:px-5 hover:py-1 hover:text-[14px] transition-all">
+                <a href="#download">Download Now</a>
+            </button>
+
+            <button id="menu-btn" class="md:hidden">
+                <svg class="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden flex flex-col items-center gap-4 py-4">
+
+            <a href="#discover" class="py-2 hover:font-semibold transition-all">Discover How</a>
+            <a href="#about" class="py-2 hover:font-semibold transition-all">About Us</a>
+            <a href="#advantages" class="py-2 hover:font-semibold transition-all">Advantages</a>
+            <button class="border-2 border-gray-500 px-4 py-1 text-[12px] rounded-xl hover:px-5 hover:py-1 hover:text-[14px] transition-all">
+                <a href="#download">Download Now</a>
+            </button>
+
+        </div>
+
+    </div>
 
     <section id="heroSection" class="relative w-full pt-[100px] lg:pt-[150px] h-full flex flex-col items-center justify-center bg-[url(assets/svgs/gradient.svg)] bg-auto md:bg-contain bg-top bg-no-repeat">
 
@@ -69,11 +108,11 @@
     
             <div id="heroText" class="relative flex flex-col items-center gap-6 max-w-sm md:max-w-lg lg:max-w-3xl text-center mx-10">
     
-                <h1 id="heroTitle" class="font-semibold text-[35px] md:text-[45px] lg:text-[55px]">Share moments in real time, right on your Home Screen</h1>
+                <h1 id="heroTitle" class="opacity-0 font-semibold text-[35px] md:text-[45px] lg:text-[55px]">Share moments in real time, right on your Home Screen</h1>
     
-                <h2 id="heroSubtitle" class="font-semibold text-[16px] max-w-[80%] md:max-w-[50%] md:text-[20px">Send spontaneous photos to your friends and see theirs instantly.</h2>
+                <h2 id="heroSubtitle" class="opacity-0 font-semibold text-[16px] max-w-[80%] md:max-w-[50%] md:text-[20px">Send spontaneous photos to your friends and see theirs instantly.</h2>
     
-                <button id="heroBtn" class="border-2 border-[#191310] px-5 py-2 font-medium text-[14px] rounded-xl hover:px-6 hover:py-2 hover:text-[16px] transition-all">
+                <button id="heroBtn" class="opacity-0 border-2 border-[#191310] px-5 py-2 font-medium text-[14px] rounded-xl hover:px-6 hover:py-2 hover:text-[16px] transition-all">
                     <a href="#">Download Free</a>
                 </button>
     
@@ -145,7 +184,7 @@
 
     </section>
 
-    <section id="about" class="w-full h-full flex flex-col items-center justify-center gap-[40px] md:gap-[60px] mt-[50px] mb-[50px]">
+    <section id="about" class="w-full h-full flex flex-col items-center justify-center gap-[40px] md:gap-[60px] mt-[25px] pt-[25px] mb-[50px]">
 
         <div class="flex flex-col items-center justify-center gap-1 mx-8 md:mx-20">
             <h2 id="aboutTitle" class="opacity-0 font-semibold text-[35px] md:text-[45px] lg:text-[55px]">About the Locket</h2>
@@ -184,7 +223,7 @@
 
     </section>
 
-    <section id="advantages" class="w-full h-full flex flex-col items-center justify-center gap-[40px] md:gap-[60px] mt-[100px] mb-[50px]">
+    <section id="advantages" class="w-full h-full flex flex-col items-center justify-center gap-[40px] md:gap-[60px] mt-[50px] pt-[50px] mb-[50px]">
 
         <div class="flex items-center justify-center mx-8 md:max-w-[60%] xl:max-w-[50%]">
 
@@ -223,6 +262,114 @@
         </div>
 
     </section>
+
+    <section id="download" class="opacity-0 relative w-full h-full flex flex-col items-center justify-center gap-[40px] md:gap-[60px] xl:gap-[100px] mt-[50px] pt-[50px] pb-[50px] bg-[url(assets/svgs/gradient2.svg)] bg-auto bg-top bg-no-repeat">
+
+        <div class="absolute inset-0 bg-gradient-to-b from-[#EBEBEB] via-transparent to-transparent z-0"></div>
+
+        <div class="flex items-center justify-center mx-8 md:max-w-[60%] xl:max-w-[50%] z-10">
+
+            <h2 id="downloadTitle" class="font-semibold text-[#5E5E5E] text-[35px] md:text-[45px] lg:text-[55px] text-center">Download <span class="text-black">Locket Widget</span> for free now</h2>
+
+        </div>
+
+        <div class="flex flex-col lg:flex-row items-center justify-center mx-8 gap-[40px] z-10">
+
+            <div class="flex items-center justify-center gap-8">
+
+                <div class="max-w-[40%]">
+                    <h4 id="contDownload" class="font-semibold text-[35px] md:text-[45px] lg:text-[55px]">0</h4>
+                    <p class="font-semibold">downloads since 2022</p>
+                </div>
+
+                <div class="max-w-[40%]">
+                    <h4 id="ratings" class="font-semibold text-[35px] md:text-[45px] lg:text-[55px]">0<span class="text-[16px]">out of 5</span></h4>
+                    <p class="font-semibold">393.5k ratings and reviews</p>
+                </div>
+
+            </div>
+
+            <div class="flex flex-col items-center justify-center gap-12 lg:max-w-[50%]">
+
+                <div class="max-w-[70%] lg:max-w-full xl:max-w-[70%]">
+                    <p class="font-semibold text-center lg:text-start md:text-[20px] xl::text-[25px]">Locket is a widget that shows live photos from your best friends, right to your Home Screen.</p>
+                </div>
+                
+
+                <div class="flex flex-col md:flex-row gap-6">
+
+                    <a id="downloadAppleBtn" href="https://apps.apple.com/us/app/locket-widget/id1600525061" class="border-2 border-black px-5 py-2 rounded-3xl w-56 flex items-center justify-center gap-3 hover:bg-[#DDA001] transition-all">
+
+                        <img src="assets/svgs/Apple Inc.svg" alt="apple icon">
+
+                        <div class="flex flex-col w-auto">
+                            <p class="text-[12px] font-medium">Download on the</p>
+                            <p class="text-[20px] font-semibold">App Store</p>
+                        </div>
+                    </a>
+
+                    <a id="downloadGoggleBtn" href="https://play.google.com/store/apps/details?id=com.locket.Locket&hl=pt_BR" class="border-2 border-black px-5 py-2 rounded-3xl w-56 flex items-center justify-center gap-3 hover:bg-[#DDA001] transition-all">
+
+                        <img src="assets/svgs/Google Play.svg" alt="apple icon">
+
+                        <div class="flex flex-col w-auto">
+                            <p class="text-[12px] font-medium">GET IT ON</p>
+                            <p class="text-[20px] font-semibold">Goggle Play</p>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer class="w-full h-full flex flex-col items-center justify-center gap-[40px] md:gap-[60px] mt-[100px] px-8 relative z-index: 10">
+
+            <div class="h-[2px] w-full bg-black bg-opacity-10 my-4"></div>
+    
+            <div class="flex flex-col lg:flex-row gap-6 items-center lg:items-start justify-around w-full">
+                <div>
+                    <p class="font-medium"> © 2025 Locket Labs, Inc. All rights reserved.</p>
+                </div>
+        
+                <div class="flex gap-6 md:gap-12">
+        
+                    <div class="flex flex-col gap-2">
+                        <h4 class="font-semibold text-[18px]">Contact</h4>
+                        <div>
+                            <a href="#" class="font-medium text-[14px] hover:font-semibold transition-all cursor-pointer">E-mail</a>
+                        </div>
+                    </div>
+        
+                    <div class="flex flex-col gap-2">
+                        <h4 class="font-semibold text-[18px]">Sections</h4>
+                        <div class="flex flex-col">
+                            <a href="#" class="font-medium text-[14px] hover:font-semibold transition-all">Discover How</a>
+                            <a href="#" class="font-medium text-[14px] hover:font-semibold transition-all">About Us</a>
+                            <a href="#" class="font-medium text-[14px] hover:font-semibold transition-all">Advantages</a>
+                            <a href="#" class="font-medium text-[14px] hover:font-semibold transition-all">Downloads</a>
+                        </div>
+                    </div>
+        
+                    <div class="flex flex-col gap-2">
+                        <h4 class="font-semibold text-[18px]">Company</h4>
+                        <div class="flex flex-col">
+                            <a href="#" class="font-medium text-[14px] hover:font-semibold transition-all">Jobs</a>
+                            <a href="#" class="font-medium text-[14px] hover:font-semibold transition-all">Privacy Policy</a>
+                            <a href="#" class="font-medium text-[14px] hover:font-semibold transition-all">Cookie Policy</a>
+                            <a href="#" class="font-medium text-[14px] hover:font-semibold transition-all">Terms of Service</a>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+            
+    
+        </footer>
+
+    </section>
+
 
     <script src="script.js"></script>
 

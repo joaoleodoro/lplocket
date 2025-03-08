@@ -128,6 +128,14 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     );
 
+    gsap.to("#download", {
+        opacity: 1,
+        duration: 1,
+        scrollTrigger: {
+            trigger: "#download"
+        }
+    })
+
     gsap.fromTo("#adTitle", 
         { y: -40 }, 
         { 
@@ -147,6 +155,31 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
     );
+
+    gsap.to("#contDownload", {
+        innerHTML: 10 + "mi",
+        duration: 1.5,
+        snap: { innerHTML: 1 },
+        ease: "power2.out",
+        scrollTrigger: {
+            trigger: "#download"
+        }
+    });
+
+    gsap.to("#ratings", {
+        innerHTML: 4.8, 
+        duration: 2, 
+        snap: { innerHTML: 0.1 }, 
+        ease: "power2.out", 
+        scrollTrigger: {
+            trigger: "#download"
+        },
+        onUpdate: function () {
+            let ratingElement = document.querySelector("#ratings");
+            ratingElement.innerHTML = `${this.targets()[0].innerHTML}<span class="text-[16px]"> out of 5</span>`;
+        }
+    });
+    
         
 });
 
